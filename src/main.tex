@@ -1,0 +1,55 @@
+\documentclass[12pt,twoside,a4paper]{article}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{array,tabularx}
+
+\setlist[enumerate,1]{labelindent=0pt, leftmargin=*}
+\pagestyle{empty}
+
+\newcolumntype{P}{>{\centering\arraybackslash}p{0.75cm}}
+\newcolumntype{L}{>{\raggedright\arraybackslash}m{0.2\textwidth}}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}m{0.2\textwidth}}
+
+\newcommand{\usetbl}{%
+  \begin{tabular}{@{}|*5{P|}@{}}
+    \hline
+    1 & 2 & 3 & 4 & 5 \\
+    \hline
+  \end{tabular}
+}
+
+\newcommand\prop[1]{%
+  \item
+  \parbox[t]{0.5\textwidth}{#1}%
+  \qquad
+  \parbox[t]{0.5\textwidth}{\usetbl}%
+}
+
+\graphicspath{{images/}}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+    citecolor=black,
+}
+
+\begin{document}
+% Header-Make sure you update this information!!!!
+\noindent
+\large
+\textbf{System Usability Scale (SUS)} \hfill \textbf{Institution} \\
+\normalsize
+\hyperlink{project_link}{Project} \hfill Department \\
+
+\input{sections/scale}
+
+\clearpage
+
+\input{sections/info}
+
+\end{document}
