@@ -22,6 +22,19 @@ We kindly ask **scientific works and studies** that make use of this SUS Survey 
 }
 ```
 
+We also propose to cite our [Zenodo](https://zenodo.org) archive, while we are using the registered DOI to track mentions of the source code. You can cite this source code archive using the following BibTeX entry:
+
+```
+@misc{francisco_maria_calisto_2018_1435044,
+  author       = {Francisco Maria Calisto},
+  title        = {MIMBCD-UI/sus: v1.0.0-alpha},
+  month        = sep,
+  year         = 2018,
+  doi          = {10.5281/zenodo.1435044},
+  url          = {https://doi.org/10.5281/zenodo.1435044}
+}
+```
+
 ## License
 
 The present repository is under the terms of [MIT](LICENSE) and the hereby information is covered by this. You are free to make changes and use this in either personal or commercial projects. Attribution is not required, but it is welcomed. A little "Thanks!" (or something to that affect) would be much appreciated.
